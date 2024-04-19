@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.doratron.wallet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name="com.doratron.wallet.common.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="068249ab59e95265413fc9f8ae65b498539360f9" />
+
+        <activity android:name="com.doratron.wallet.ui.intro.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.doratron.wallet.ui.main.MainActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.createwallet.CreateWalletActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.importkey.ImportPrivateKeyActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.backupaccount.BackupAccountActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.login.LoginActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.myaccount.MyAccountActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.address.AddressActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.qrscan.QrScanActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.sendtrc10.SendTrc10Activity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.sendtrc20.SendTrc20Activity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.about.AboutActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.market.MarketActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.blockexplorer.BlockExplorerActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.more.MoreActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.representative.RepresentativeActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.vote.VoteActivity"
+            android:theme="@style/VoteTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.node.NodeActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.requestcoin.RequestCoinActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.opensource.OpenSourceActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.mytransfer.TransferActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.token.TokenActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity android:name="com.doratron.wallet.ui.blockdetail.BlockDetailActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.token.TokenDetailActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.accountdetail.AccountDetailActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.accountdetail.overview.AccountVoteActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.exchange.ExchangeActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.doratron.wallet.ui.previewwallet.PreviewWalletActivity"
+            android:theme="@style/WalletTheme" />
+
+        <activity
+            android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/FinestWebViewTheme.Light" />
+
+        <!-- test -->
+        <activity android:name="com.doratron.wallet.ui.smartcontract.TestSmartContractActivity" />
+
+    </application>
+
+</manifest>

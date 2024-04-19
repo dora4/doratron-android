@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--https://tron-wiki.readthedocs.io/en/latest/Technical_Overview_of_TRON.html-->
+    <array name="fullnode.ip.list">
+        <item>grpc.trongrid.io:50051</item>
+    </array>
+
+    <array name="solidity.ip.list">
+        <item>grpc.trongrid.io:50052</item>
+    </array>
+
+    <string-array name="feedback_email_recipient">
+        <item>dev@devband.com</item>
+    </string-array>
+
+    <array name="contract_types">
+        <item>AccountCreateContract</item>
+        <item>TransferContract</item>
+        <item>TransferAssetContract</item>
+        <item>VoteAssetContract</item>
+        <item>VoteWitnessContract</item>
+        <item>WitnessCreateContract</item>
+        <item>AssetIssueContract</item>
+        <item>DeployContract</item>
+        <item>WitnessUpdateContract</item>
+        <item>ParticipateAssetIssueContract</item>
+        <item>AccountUpdateContract</item>
+        <item>FreezeBalanceContract</item>
+        <item>UnfreezeBalanceContract</item>
+        <item>WithdrawBalanceContract</item>
+        <item>UnfreezeAssetContract</item>
+        <item>UpdateAssetContract</item>
+        <item>CustomContract</item>
+    </array>
+
+    <array name="trc20_contract_address">
+        <item>THvZvKPLHKLJhEFYKiyqj6j8G8nGgfg7ur</item>
+    </array>
+</resources>
